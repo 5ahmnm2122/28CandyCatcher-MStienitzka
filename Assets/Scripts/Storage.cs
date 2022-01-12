@@ -6,4 +6,6 @@ using UnityEngine;
 public class Storage : ScriptableObject {
 
     public string playerName;
+    public int score;
+    public float time;
 }
