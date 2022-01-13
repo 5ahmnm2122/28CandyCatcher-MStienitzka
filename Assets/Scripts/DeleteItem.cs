@@ -6,6 +6,7 @@ public class DeleteItem : MonoBehaviour
 {
     public Storage infoStorage;
     public float time;
+    public int amount;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class DeleteItem : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Object.Destroy(this.gameObject);
-        infoStorage.score = infoStorage.score + 1;  
+        infoStorage.score = infoStorage.score + amount;  
     }
 
     private void Update()

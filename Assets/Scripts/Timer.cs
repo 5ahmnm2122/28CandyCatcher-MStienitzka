@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -24,6 +25,14 @@ public class Timer : MonoBehaviour
         timeText.text = Mathf.Round(infoStorage.time).ToString();
         scoreText.text = infoStorage.score.ToString();
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Intro");
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            SceneManager.LoadScene("EndScene");
+        }
 
         if (timerIsRunning)
         {
@@ -35,6 +44,7 @@ public class Timer : MonoBehaviour
             {
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
+                SceneManager.LoadScene("EndScene");
                 timerIsRunning = false;
             }
         }

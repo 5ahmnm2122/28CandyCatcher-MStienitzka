@@ -19,7 +19,7 @@ public class SpawnObjects : MonoBehaviour
         while (true)
         {
             Debug.Log("CorutineWorks");
-            Instantiate(spawnableObject[Random.Range(0,10)], new Vector3(spawnPoints[Random.Range(0, 8)].transform.position.x, 80,90),transform.rotation);
+            Instantiate(spawnableObject[Random.Range(0,11)], new Vector3(spawnPoints[Random.Range(0, 8)].transform.position.x, 80,90),transform.rotation);
             yield return new WaitForSeconds(time);
         }
        

@@ -32,7 +32,7 @@ public class AddTime : MonoBehaviour
         timer = GameObject.Find("GameManager").GetComponent<Timer>();
         oldTime = timer.timeRemaining;
         timer.timeRemaining = oldTime + addedTime;
-        infoStorage.score += 1;
+        infoStorage.score += 3;
         Destroy(this.gameObject);
     }
     private void Update()

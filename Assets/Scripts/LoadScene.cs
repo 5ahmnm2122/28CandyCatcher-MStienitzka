@@ -7,6 +7,10 @@ public class LoadScene : MonoBehaviour
 {
    public Storage storageName;
    public void MainScene(){
-   SceneManager.LoadScene("MainScene", LoadSceneMode.Additive);
+   SceneManager.LoadScene("MainScene");
    }
+    public void FirstScene()
+    {
+        SceneManager.LoadScene("Intro");
+    }
 }
