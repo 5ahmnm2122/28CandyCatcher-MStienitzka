@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46a7cafca66a442abef6f0c839a9c00, type: 3}
   m_Name: StorageName
   m_EditorClassIdentifier: 
+  playerName: Max
+  score: 69
+  time: 45.57452
+  lives: 0

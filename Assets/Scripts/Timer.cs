@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public float timeRemaining;
     public bool timerIsRunning = false;
     public Text timeText;
+    public Image[] Hearts;
     public Text scoreText;
     public Storage infoStorage;
 
@@ -17,6 +18,7 @@ public class Timer : MonoBehaviour
         // Starts the timer automatically
         timerIsRunning = true;
         infoStorage.score = 0;
+        infoStorage.lives = 3;
     }
 
     void Update()
@@ -31,6 +33,21 @@ public class Timer : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.N))
         {
+            SceneManager.LoadScene("EndScene");
+        }
+
+        if (infoStorage.lives == 2)
+        {
+            Destroy(Hearts[2]);
+
+        }
+        else if (infoStorage.lives == 1)
+        {
+            Destroy(Hearts[1]);
+        }
+        else if (infoStorage.lives <= 0)
+        {
+            Destroy(Hearts[0]);
             SceneManager.LoadScene("EndScene");
         }
 

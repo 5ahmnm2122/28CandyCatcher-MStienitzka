@@ -28,6 +28,7 @@ public class DeleteBadItem : MonoBehaviour
     {
         Object.Destroy(this.gameObject);
         infoStorage.score = infoStorage.score - amount;
+        infoStorage.lives = infoStorage.lives - 1;
     }
 
     private void Update()
