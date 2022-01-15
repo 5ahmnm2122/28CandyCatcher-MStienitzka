@@ -7,4 +7,5 @@ public class Storage : ScriptableObject {
     public int score;
     public float time;
     public int lives;
+    public int size;
 }

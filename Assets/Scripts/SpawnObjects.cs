@@ -7,6 +7,8 @@ public class SpawnObjects : MonoBehaviour
     public Transform[] spawnPoints;
     public GameObject[] spawnableObject;
     public float time;
+    public int randomInt;
+    public Storage infoStorage;
 
 
     private void Start()

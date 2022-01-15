@@ -7,10 +7,16 @@ public class DeleteBadItem : MonoBehaviour
     public Storage infoStorage;
     public float time;
     public int amount;
+    public Vector3 oldScale;
+    public Vector3 newScale;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(DeleteOverTime());
+        StartCoroutine(DeleteOverTime());
+        oldScale = this.gameObject.transform.localScale;
+        newScale = oldScale * Random.Range(1, 3);
+        this.gameObject.transform.localScale = newScale;
 
     }
 
