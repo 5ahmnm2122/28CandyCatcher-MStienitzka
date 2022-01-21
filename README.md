@@ -14,6 +14,11 @@ WebGL
 
 ### Necessary setup/execution steps: 
 Unity Installation
+### Screenshots
+![Intro Scene](https://github.com/5ahmnm2122/28CandyCatcher-MStienitzka/blob/main/Assets/gitImages/Intro.png)
+![Main Scene](https://github.com/5ahmnm2122/28CandyCatcher-MStienitzka/blob/main/Assets/gitImages/Main.jpg)
+![End Scene](https://github.com/5ahmnm2122/28CandyCatcher-MStienitzka/blob/main/Assets/gitImages/End.png)
+
 
 ### Third party material: 
 Fruit Objects: 
