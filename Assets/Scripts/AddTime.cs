@@ -18,12 +18,9 @@ public class AddTime : MonoBehaviour
 
     private IEnumerator DeleteOverTime()
     {
-        while (true)
-        {
+    
             yield return new WaitForSeconds(time);
             Object.Destroy(this.gameObject);
-
-        }
     }
 
 
